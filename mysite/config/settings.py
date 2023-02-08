@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# прописываем все приложения, которые есть в пакете
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+#название забирается из apps.py. Можно прописать и просто mainapp, но потом придется везде прописывать адресацию на 
+#apps.py
+    'mainapp.apps.MainappConfig'
 ]
 
 MIDDLEWARE = [

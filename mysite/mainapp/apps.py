@@ -1,3 +1,5 @@
+#настройка (конфиг) текущего приложения
+
 from django.apps import AppConfig
 
 
